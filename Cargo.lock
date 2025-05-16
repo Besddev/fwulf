@@ -2640,13 +2640,15 @@ dependencies = [
 
 [[package]]
 name = "rust_search"
-version = "0.1.1"
+version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "28cde70f4279cb0178d8eda133ddc7820eca9d458bd8eee0479a56824adb46a6"
+checksum = "d27d7be20245d289c9dde663f06521de08663d73cbaefc45785aa65d02022378"
 dependencies = [
+ "dirs",
  "ignore",
  "num_cpus",
  "regex",
+ "strsim",
 ]
 
 [[package]]
@@ -2950,6 +2952,12 @@ name = "strict-num"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6637bab7722d379c8b41ba849228d680cc12d0a45ba1fa2b48f2a30577a06731"
+
+[[package]]
+name = "strsim"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623"
 
 [[package]]
 name = "svg_fmt"
