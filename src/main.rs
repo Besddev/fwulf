@@ -1,14 +1,12 @@
-use rust_search::{SearchBuilder};
+#![windows_subsystem = "windows"]
 
-// Made something to try this out
- fn main() {
-     let search: Vec<String> = SearchBuilder::default()
-         .location("~/Downloads/")
-         .depth(1)
-         .build()
-         .collect();
+use std::error::Error;
 
-     for path in search {
-        println!("{:?}", path);
-     }
- }
+slint::include_modules!();
+
+fn main() -> Result<(), Box<dyn Error>> {
+    let ui = MainWindow::new()?;
+    ui.run()?;
+
+    Ok(())
+}
